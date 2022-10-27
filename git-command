@@ -1,0 +1,143 @@
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT
+$ git init
+Initialized empty Git repository in E:/DevOps GIT/GIT/.git/
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git clone https://github.com/venkyidf/gitdevops.git
+Cloning into 'gitdevops'...
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 20 (delta 5), reused 17 (delta 2), pack-reused 0
+Receiving objects: 100% (20/20), done.
+Resolving deltas: 100% (5/5), done.
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ touch 1
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ gi add .
+bash: gi: command not found
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git  add .
+warning: adding embedded git repository: gitdevops
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> gitdevops
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached gitdevops
+hint:
+hint: See "git help submodule" for more information.
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git add .
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git commit -m "123"
+[master (root-commit) 574e673] 123
+ 2 files changed, 1 insertion(+)
+ create mode 100644 1
+ create mode 160000 gitdevops
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ cd venky
+bash: cd: venky: No such file or directory
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ cd venky/
+bash: cd: venky/: No such file or directory
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ cd gitdevops
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/gitdevops (main)
+$ git push
+Everything up-to-date
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/gitdevops (main)
+$ touch 12 123 1234
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/gitdevops (main)
+$ git add .
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/gitdevops (main)
+$ git commit -m "new"
+[main 39a3a29] new
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 12
+ create mode 100644 123
+ create mode 100644 1234
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/gitdevops (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 265 bytes | 265.00 KiB/s, done.
+Total 3 (delta 0), reused 1 (delta 0), pack-reused 0
+To https://github.com/venkyidf/gitdevops.git
+   0d016a5..39a3a29  main -> main
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/gitdevops (main)
+$ ls
+12  123  1234  venky/
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/gitdevops (main)
+$ touch git-command
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/gitdevops (main)
+$ git add .
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/gitdevops (main)
+$ git commit -m "git-command"
+[main b13d739] git-command
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git-command
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/gitdevops (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 234 bytes | 234.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/venkyidf/gitdevops.git
+   39a3a29..b13d739  main -> main
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/gitdevops (main)
+$
